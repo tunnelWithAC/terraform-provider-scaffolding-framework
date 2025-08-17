@@ -16,10 +16,10 @@ import (
 )
 
 // Ensure the implementation satisfies the expected interfaces.
-// Ensure the implementation satisfies the expected interfaces.
 var (
-	_ resource.Resource              = &orderResource{}
-	_ resource.ResourceWithConfigure = &orderResource{}
+	_ resource.Resource                = &orderResource{}
+	_ resource.ResourceWithConfigure   = &orderResource{}
+	_ resource.ResourceWithImportState = &orderResource{}
 )
 
 // NewOrderResource is a helper function to simplify the provider implementation.
